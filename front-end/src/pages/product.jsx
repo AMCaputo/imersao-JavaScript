@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { ContexCarrinho } from '../App'
 
 const product = () => {
@@ -109,6 +109,8 @@ const product = () => {
                     </div>
 
                 <button onClick={() => adicionarProduto(quantidade, produto)}>Adicionar ao carrinho</button>
+               
+                <Link to="/" className='button'>Selecionar outro produto</Link>
             </div>
         </div>
     </section>

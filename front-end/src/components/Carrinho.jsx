@@ -31,8 +31,8 @@ const Carrinho = () => {
 
   return (
     <div className="carrinho">
-        <div className="carrinho__titulo">
-            <h2>Carinho</h2>
+        <div className="carrinho__titulo carrinho__h2">
+            <h2 className='__h2'>Carinho</h2>
 
             <p className='carrinho__fechar' onClick={() => setCarrinhoAberto(false)}>
                 X

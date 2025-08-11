@@ -7,6 +7,7 @@
     --amarelo: #ffe601;
     --cinza: #4b4b4b;
     --azul: #3583fa;
+    --azul-claro: #3584faec;
 }
 
 *{
@@ -280,6 +281,33 @@ button{
     cursor: pointer;
 }
 
+.button{
+    padding: 16px 32px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--verde);
+    transition: 0.9ms;
+    color: white;
+}
+.carrinho__h2{
+    background-color: var(--azul-claro);
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.__h2{
+    display: contents;
+    text-align: center;
+    color: white;
+}
+
 .carrinho{
     padding: 24px;
     background-color: white;
@@ -310,7 +338,7 @@ button{
 .carrinho__titulo p{
     width: 35px;
     height: 35px;
-    background-color: gray;
+    background-color: rgb(238, 88, 88);
     color: white;
     display: grid;
     place-items: center;
