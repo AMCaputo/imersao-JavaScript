@@ -5,6 +5,9 @@ import Product from '../src/pages/product'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Carrinho from "./components/Carrinho"
 import { createContext, useState } from "react"
+import axios from "axios"
+
+axios.defaults.baseURL = "http://localhost:4000/api"
 
 export const ContexCarrinho = createContext(null)
 

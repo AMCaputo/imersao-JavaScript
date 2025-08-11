@@ -15,7 +15,7 @@ const Carrinho = () => {
     } = useContext(ContexCarrinho)
 
     const fecharPedido =  async () => {
-        const {data} = await axios.post("http://localhost:4000/pedido/", {
+        const {data} = await axios.post("pedido/", {
             valorTotal,
             itensVendas: itensCarrinho,
         })
