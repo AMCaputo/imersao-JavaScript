@@ -340,7 +340,13 @@ button{
 .relativo{
     position: relative;
 }
-
+.logo{
+    width: 4rem;
+    border-radius: 50%;
+}
+.logo__h3{
+    margin-top: 1rem;
+}
 .carrinho__numero{
     top: -12px;
     position: absolute;

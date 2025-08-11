@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ContexCarrinho } from '../App'
+import CapLogo from '../assets/cap.jpg'
 
 const Header = () => {
    const {carrinhoAberto, setCarrinhoAberto, itensCarrinho} = useContext(ContexCarrinho)
@@ -13,9 +14,9 @@ const Header = () => {
      <header>
         <div className="livre">
           <Link to={'/'}>
-            <img src="https://th.bing.com/th/id/ODF.CXNQkt8X-9rt8rcavtekgA?w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="Logo do Mercado Livre"/>
+            <img className='logo' src={CapLogo} alt="Logo do Mercado Livre"/>
           </Link>
-            <div>
+            <div className='logo__h3'>
                 <h3>mercado</h3>
                 <h3>livre</h3>
             </div>
